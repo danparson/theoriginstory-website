@@ -1,0 +1,607 @@
+@font-face {
+  font-family: 'komika_handitalic';
+  src: url('../fonts/Komika_Hand_Italic-webfont.eot');
+  src: url('../fonts/Komika_Hand_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Komika_Hand_Italic-webfont.woff') format('woff'),
+       url('../fonts/Komika_Hand_Italic-webfont.ttf') format('truetype'),
+       url('../fonts/Komika_Hand_Italic-webfont.svg#komika_handitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'komika_titleregular';
+  src: url('../fonts/KomikaTitle-webfont.eot');
+  src: url('../fonts/KomikaTitle-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/KomikaTitle-webfont.woff') format('woff'),
+       url('../fonts/KomikaTitle-webfont.ttf') format('truetype'),
+       url('../fonts/KomikaTitle-webfont.svg#komika_titleregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	background-color: #111111;
+	font-family: 'komika_handitalic';
+}
+
+#tos-page-container {
+	background-color: #FFFFFF;
+	padding: 8px 23px;
+}
+
+.tos-title-line {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	color: yellow;
+	font-weight: bolder;
+	line-height: 40px;
+	height: 40px;
+}
+
+.tos-publisher-line {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	color: yellow;
+	font-size: 125%;
+	font-weight: bolder;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.tos-publisher-line {
+		font-size: 200%;
+	}
+}
+
+.tos-issue-line {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	color: yellow;
+	font-size: 125%;
+	font-weight: bolder;
+	text-align: right;
+}
+
+@media (min-width: 768px) {
+	.tos-issue-line {
+		font-size: 200%;
+	}
+}
+
+.tos-comic-panel {
+	border: 2px solid #111111;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@media (min-width: 992px) {
+	.tos-comic-panel {
+		height: 350px;
+	}
+}
+
+@media (max-width: 991px) {
+	.tos-comic-panel {
+		margin-top: 8px;
+	}
+}
+
+.tos-top-panel {
+	background-color: red;
+}
+
+.tos-top-panel p {
+	margin-bottom: 0em;
+}
+
+.tos-logo-panel {
+	text-align: center;
+	padding: 10px;
+	background-color: #111111;
+}
+
+.tos-logo-panel img {
+	width: 100%;
+	margin: 50px auto;
+}
+
+.tos-announce-image {
+	width: 100%;
+}
+
+.tos-announce-caption {
+	background-color: yellow;
+	padding-left: 5px;
+}
+
+.tos-announce-caption-top {
+	border-bottom: 2px solid #111111;
+}
+
+.tos-announce-caption-bottom {
+	border-top: 2px solid #111111;
+}
+
+.tos-newspaper-left
+{
+  border: 2px outset #111111;
+  width: 85%;
+  box-shadow: 5px 5px 5px #888888;
+  margin: 20px auto;
+  background-color: #eeeeee;
+  padding: 0px 10px 0px 0px;
+}
+
+.tos-newspaper-left li {
+	margin-bottom: 5px;
+}
+
+.tos-newspaper-right
+{
+  border: 2px outset #111111;
+  width: 85%;
+  box-shadow: -5px 5px 5px #888888;
+  margin: 20px auto;
+  background-color: #eeeeee;
+  padding: 0px 15px 15px 15px;
+}
+
+.tos-newspaper-title
+{
+  font-size: 200%;
+  text-align: center;
+  font-family: 'komika_titleregular';
+}
+
+.tos-panel-logo-container {
+	text-align: center;
+	background-color: #111111;
+}
+
+.tos-panel-logo {
+	height: 95%;
+	width: auto;
+	max-width: 95%;
+	margin: 5px;
+}
+
+.tos-announce-video {
+	width: 100%;
+	height: 100%;
+	min-height: 240px;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.tos-navbar-container {
+	padding: 0;
+	background-color: #111111;
+}
+
+.tos-navbar-main {
+	background-color: #111111;
+}
+
+.tos-navbar-brand {
+	padding: 5px 10px 5px 5px;
+}
+
+.tos-navbar-brand-text {
+	line-height: 50px;
+	height: 50px;
+	margin: 0;
+	color: white;
+	font-size: 125%;
+	font-family: 'komika_titleregular';
+}
+
+.tos-navbar-toggle {
+	border-color: #333333;
+}
+
+.tos-navbar-nav {
+	font-family: 'komika_titleregular';
+}
+
+.tos-navbar-nav a {
+	color: white;
+	font-size: 200%;
+}
+
+.tos-navbar-nav a:hover,
+.tos-navbar-nav a:focus {
+	color: #111111;
+	background-color: white;
+}
+
+.tos-navbar-nav a {
+	color: white;
+	font-size: 200%;
+}
+
+.tos-icon-bar {
+  background-color: #ffffff;
+}
+
+@media (max-width: 991px) {
+	.tos-navbar-main {
+	  position: fixed;
+	  right: 0;
+	  left: 0;
+	  z-index: 1030;
+	  top: 0;
+	  border-width: 0 0 1px;
+	}
+}
+
+.tos-mobile-social {
+	background-color: #111111;
+	color: red;
+}
+
+.tos-mobile-social p {
+	font-size: 350%;
+	text-align: center;
+}
+
+.tos-social-icon-fb {
+	color: #3a5795;
+}
+
+.tos-social-icon-tw {
+	color: #55acee;
+}
+
+.tos-social-icon-yt {
+	color: #cd201f;
+}
+
+.tos-social-icon-vn {
+	color: #00ac7f;
+}
+
+.tos-social-icon-ig {
+	color: #155685;
+}
+
+.tos-social-icon-email {
+	color: #111111;
+}
+
+.tos-social {
+	font-size: 250%;
+}
+
+.copyright {
+	padding-top: 8px;
+}
+
+.copyright p {
+	text-align: center;
+}
+
+.page-title {
+	font-family: 'komika_titleregular';
+	text-align: center;
+	font-size: 300%;
+}
+
+.bio-photo-panel {
+	margin: auto 0px;
+	padding: 0px;
+}
+
+@media (max-width: 767px) {
+	.bio-photo-panel {
+		display: none;
+	}
+
+	#bio-photo-container {
+		width: 100%;
+	}
+	
+	#bio-mobile-photo {
+		display: inline;
+		width: 100%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.bio-photo-panel {
+		height: 389px;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+		background-size: 100% 100%;
+	}
+
+	#bio-photo-container {
+		width: 561px;
+		min-width: 561px;
+		max-width: 561px;
+	}
+	
+	#bio-mobile-photo {
+		display: none;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.bio-photo-panel {
+		height: 518px;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+		background-size: 100% 100%;
+	}
+
+	#bio-photo-container {
+		width: 748px;
+		min-width: 748px;
+		max-width: 748px;
+	}
+	
+	#bio-mobile-photo {
+		display: none;
+	}
+}
+@media (min-width: 1200px) {
+	.bio-photo-panel {
+		height: 636px;
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#bio-photo-container {
+		width: 918px;
+		min-width: 918px;
+		max-width: 918px;
+	}
+	
+	#bio-mobile-photo {
+		display: none;
+	}
+}
+
+#bio-photo-1 {
+	background-image: url("../img/tos_bio_photo_1.jpg");
+	width: 25.0481696%;
+	background-size: 100% 100%;
+}
+
+#bio-photo-2 {
+	background-image: url("../img/tos_bio_photo_2.jpg");
+	width: 10.5973025%;
+	background-size: 100% 100%;
+}
+
+#bio-photo-3 {
+	background-image: url("../img/tos_bio_photo_3.jpg");
+	width: 10.5973025%;
+	background-size: 100% 100%;
+}
+
+#bio-photo-4 {
+	background-image: url("../img/tos_bio_photo_4.jpg");
+	width: 8.18882466%;
+	background-size: 100% 100%;
+}
+
+#bio-photo-5 {
+	background-image: url("../img/tos_bio_photo_5.jpg");
+	width: 6.74373796%;
+	background-size: 100% 100%;
+}
+
+#bio-photo-6 {
+	background-image: url("../img/tos_bio_photo_6.jpg");
+	width: 7.70712909%;
+	background-size: 100% 100%;
+}
+
+#bio-photo-7 {
+	background-image: url("../img/tos_bio_photo_7.jpg");
+	width: 19.2678227%;
+	background-size: 100% 100%;
+}
+
+#bio-photo-8 {
+	background-image: url("../img/tos_bio_photo_8.jpg");
+	width: 11.849711%;
+	background-size: 100% 100%;
+}
+
+#bio-photo-container:hover > #bio-photo-1 {
+	background-image: url("../img/tos_bio_photo_bw_1.jpg");
+}
+
+#bio-photo-container:hover > #bio-photo-2 {
+	background-image: url("../img/tos_bio_photo_bw_2.jpg");
+}
+
+#bio-photo-container:hover > #bio-photo-3 {
+	background-image: url("../img/tos_bio_photo_bw_3.jpg");
+}
+
+#bio-photo-container:hover > #bio-photo-4 {
+	background-image: url("../img/tos_bio_photo_bw_4.jpg");
+}
+
+#bio-photo-container:hover > #bio-photo-5 {
+	background-image: url("../img/tos_bio_photo_bw_5.jpg");
+}
+
+#bio-photo-container:hover > #bio-photo-6 {
+	background-image: url("../img/tos_bio_photo_bw_6.jpg");
+}
+
+#bio-photo-container:hover > #bio-photo-7 {
+	background-image: url("../img/tos_bio_photo_bw_7.jpg");
+}
+
+#bio-photo-container:hover > #bio-photo-8 {
+	background-image: url("../img/tos_bio_photo_bw_8.jpg");
+}
+
+#bio-photo-1:hover {
+	background-image: url("../img/tos_bio_photo_1.jpg") !important;
+}
+
+#bio-photo-2:hover {
+	background-image: url("../img/tos_bio_photo_2.jpg") !important;
+}
+
+#bio-photo-3:hover {
+	background-image: url("../img/tos_bio_photo_3.jpg") !important;
+}
+
+#bio-photo-4:hover {
+	background-image: url("../img/tos_bio_photo_4.jpg") !important;
+}
+
+#bio-photo-5:hover {
+	background-image: url("../img/tos_bio_photo_5.jpg") !important;
+}
+
+#bio-photo-6:hover {
+	background-image: url("../img/tos_bio_photo_6.jpg") !important;
+}
+
+#bio-photo-7:hover {
+	background-image: url("../img/tos_bio_photo_7.jpg") !important;
+}
+
+#bio-photo-8:hover {
+	background-image: url("../img/tos_bio_photo_8.jpg") !important;
+}
+
+.bio-photo-panel > a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.band-member-item {
+	border: none;
+	background-color: #EEEEEE;
+}
+
+.band-member-item > dl > dd {
+	margin-bottom: 10px;
+}
+
+.list-group-item-heading {
+	color: #FF0000;
+	font-size: 150%;
+}
+
+.band-member-item > dl > dt {
+	font-size: 125%;
+}
+
+.band-member-item > a {
+	position: absolute;
+	top: -50px;
+}
+
+#band-member-list > .active {
+	background-color: #CC0000;
+	background-image: none;
+	text-shadow: none;
+	border: none;
+}
+
+#band-member-list > .active > .list-group-item-heading {
+	color: #111111;
+}
+
+.tos-contact-social {
+	font-size: 500%;
+}
+
+.tos-bio {
+	text-align: center;
+}
+
+@media (max-width: 991px) {
+	.tos-bio {
+		font-size: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+	.tos-bio {
+		font-size: 125%;
+	}
+}
+
+.bio-hr {
+    border-top: 1px solid #111111;
+}
+
+.tos-not-found-image {
+	width: 100%;
+}
+
+.tos-social-icon {
+	width: 30px;
+}
+
+.tos-navbar-top {
+	border-bottom: 3px solid #666666;
+}
+
+.tos-button-subscribe {
+	background-color: red;
+}
+
+.tos-navbar-logo {
+	width: 40px;
+	height: 40px;
+}
+
+.tos-content-page-container {
+	border: 2px solid black;
+}
+
+.tos-error-page-text {
+	font-size: 150%;
+	text-align: center;
+}
+
+.tos-contact-social-icon {
+	width: 70px;
+}
+
+.tos-announce-container, .tos-announce-link, .tos-announce-image {
+	height: 100%;
+	width: 100%;
+}
+
+.tos-announce-image {
+	border: 3px solid white;
+}
+
+.tos-event-list-separator {
+	width: 75%;
+	border-color: #111111;
+}
+
+#mce-error-response, #mce-success-response {
+	display: none;
+}
+
+.mc-trap {
+	position: absolute;
+	left: -5000px;
+}
