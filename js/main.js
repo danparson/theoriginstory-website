@@ -18,4 +18,9 @@
 	var addressValue = $(this).attr("href");
     $(addressValue).parent().addClass("active");
   });
+
+  $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
 })();

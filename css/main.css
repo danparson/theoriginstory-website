@@ -514,6 +514,11 @@ body {
 	top: -50px;
 }
 
+#band-member-list {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #band-member-list > .active {
 	background-color: #CC0000;
 	background-image: none;
@@ -604,4 +609,58 @@ body {
 .mc-trap {
 	position: absolute;
 	left: -5000px;
+}
+
+.tos-gallery {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.tos-media-link {
+	margin-bottom: 10px;
+}
+
+.modal-backdrop.in {
+    opacity: 0.95;
+    background-color: #333333;
+}
+.ekko-lightbox .modal-content {
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+}
+.ekko-lightbox .modal-header {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.ekko-lightbox .modal-header .close {
+    opacity: 0.5;
+    color: #fff;
+    text-shadow: none;
+    font-weight: 100;
+    margin-top: 5px;
+}
+.ekko-lightbox .modal-header .close:hover {
+    opacity: 1;
+}
+.ekko-lightbox .modal-header h4.modal-title {
+    font-weight: 100;
+    color: #fff;
+    padding: 0;
+}
+.ekko-lightbox .modal-body {
+    padding: 0;
+}
+.ekko-lightbox .modal-footer {
+    opacity: 0.9;
+    border: 0;
+    color: #fff;
+    font-weight: 100;
+    padding: 0;
+}
+.ekko-lightbox-nav-overlay a {
+    opacity: 0.9;
+    text-shadow: none;
 }
