@@ -11,16 +11,16 @@ title: Photos/Videos
 						</div>
 					</div>
 					<div class="row tos-gallery">
-						
+
 						{% for medium in site.data.media %}
-						
+
 						{% if medium.type == 'image' %}
-						<a href="img/media/{{ medium.id }}.jpg" data-toggle="lightbox" data-gallery="tos-media" data-title="{{ medium.caption }}" data-footer="Credit: {{ site.data.sources[medium.source].name }}" class="col-xs-12 col-lg-4 tos-media-link">
-							<img src="img/media_t/{{ medium.id }}t.jpg" class="tos-media-thumb" alt="{{ medium.caption }}. Credit: {{ site.data.sources[medium.source].name }}" />
+						<a href="img/media/{{ medium.id }}.jpg" data-toggle="lightbox" data-gallery="tos-media" data-title="{{ medium.caption }}" data-footer="Credit: {{ site.data.sources[medium.source].name }}" class="col-xs-12 col-sm-6 col-md-4 tos-media-link">
+							<img src="img/media_t/{{ medium.id }}t.jpg" class="tos-media-thumb img-responsive" alt="{{ medium.caption }}. Credit: {{ site.data.sources[medium.source].name }}" />
 						</a>
 						{% elsif medium.type == 'youtube' %}
-						<a href="https://www.youtube.com/watch?v={{ medium.embed_url }}" data-toggle="lightbox" data-gallery="tos-media" data-title="{{ medium.caption }}" data-footer="Credit: {{ site.data.sources[medium.source].name }}" data-width="1080" class="col-xs-12 col-lg-4 tos-media-link">
-							<img src="img/media_t/{{ medium.id }}t.jpg" class="tos-media-thumb" alt="{{ medium.caption }}. Credit: {{ site.data.sources[medium.source].name }}" />
+						<a href="https://www.youtube.com/watch?v={{ medium.embed_url }}" data-toggle="lightbox" data-gallery="tos-media" data-title="{{ medium.caption }}" data-footer="Credit: {{ site.data.sources[medium.source].name }}" data-width="1000" class="col-xs-12 col-sm-6 col-md-4 tos-media-link">
+							<img src="img/media_t/{{ medium.id }}t.jpg" class="tos-media-thumb img-responsive" alt="{{ medium.caption }}. Credit: {{ site.data.sources[medium.source].name }}" />
 						</a>
 						{% endif %}
 						{% endfor %}

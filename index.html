@@ -4,15 +4,15 @@ layout: default
 
 			<div class="col-xs-12 col-md-8 tos-comic-panel">
 				<div class="tos-announce-container">
-					<a href="https://www.facebook.com/events/1545777722419251/" class="tos-announce-link"><img class="tos-announce-image" src="img/show/160423.jpg" /></a>
+					<a href="{{ site.data.global.main_banner_url }}" class="tos-announce-link"><img class="tos-announce-image" src="{{ site.data.global.main_banner_image }}" /></a>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4 tos-comic-panel">
-				<iframe class="tos-announce-video" src="https://www.youtube-nocookie.com/embed/KU2YEJ2rSq8?rel=0" allowfullscreen></iframe>
+				<iframe class="tos-announce-video" src="https://www.youtube-nocookie.com/embed/{{ site.data.global.primary_video_id }}?rel=0" allowfullscreen></iframe>
 			</div>
-			
+
 			<div class="clearfix visible-md-block visible-lg-block"></div>
-			
+
 			<div class="col-xs-12 col-md-4 tos-comic-panel">
 				<div class="tos-announce-caption tos-announce-caption-top">In Recent News...</div>
 				<div class="tos-newspaper-left container">
@@ -24,11 +24,9 @@ layout: default
 					<div class="row">
 						<div class="col-xs-12">
 						<ul>
-							<li>Matchbox 20 cover band to perform at national ska fest</li>
-							<li>World-renowned bari saxophonist gives three central IL performances</li>
-							<li>Local no-name band opens up music fest of 60+ acts</li>
-							<li>Alcohol to kill man now</li>
-							<li>Morgan Freeman: Red Light Camera Reported</li>
+							{% for headline in site.data.global.headlines %}
+							<li>{{ headline }}</li>
+							{% endfor %}
 						</ul>
 						</div>
 					</div>
@@ -43,41 +41,30 @@ layout: default
 							</div>
 						</div>
 					<div class="row">
-						<div class="col-xs-4">
-							<a href="https://www.facebook.com/events/697312120335125/">4/23</a><br />
-							<a href="https://www.facebook.com/events/697312120335125/">11:30 PM</a>
-						</div>
-						<div class="col-xs-8">
-							<a href="https://www.facebook.com/events/697312120335125/">J &amp; J's Pizza</a><br />
-							<a href="https://www.facebook.com/events/697312120335125/">Denton, TX</a>
-						</div>
+						{% assign output_hr = false %}
+						{% for show in site.data.shows limit:3 %}
+						{% if output_hr == true %}
 						<div class="col-xs-12">
 							<hr class="tos-event-list-separator" />
 						</div>
+						{% endif %}
 						<div class="col-xs-4">
-							<a href="https://www.facebook.com/events/1702435653345275/">5/13</a><br />
-							<a href="https://www.facebook.com/events/1702435653345275/">6 PM</a>
+							{% if show.fb_event_id %}<a href="https://www.facebook.com/events/{{ show.fb_event_id }}/">{% endif %}{{ show.datetime | date: "%-m/%e" }}{% if show.fb_event_id %}</a>{% endif %}<br />
+							{% capture showtime %}{{ show.datetime | date: "%l:%M %p" }}{% endcapture %}
+							{% if showtime != "12:00 AM" %}{% if show.fb_event_id %}<a href="https://www.facebook.com/events/{{ show.fb_event_id }}/">{% endif %}{{ show.datetime | date: "%l:%M %p" }}{% if show.fb_event_id %}</a>{% endif %}{% endif %}
 						</div>
 						<div class="col-xs-8">
-							<a href="https://www.facebook.com/events/1702435653345275/">Theo's Java Club</a><br />
-							<a href="https://www.facebook.com/events/1702435653345275/">Rock Island, IL</a>
+							{% if show.fb_event_id %}<a href="https://www.facebook.com/events/{{ show.fb_event_id }}/">{% endif %}{{ show.venue }}{% if show.fb_event_id %}</a>{% endif %}<br />
+							{% if show.fb_event_id %}<a href="https://www.facebook.com/events/{{ show.fb_event_id }}/">{% endif %}{{ show.citystate }}{% if show.fb_event_id %}</a>{% endif %}
 						</div>
-						<div class="col-xs-12">
-							<hr class="tos-event-list-separator" />
-						</div>
-						<div class="col-xs-4">
-							<a href="https://www.facebook.com/events/1140887622629592/">5/20</a><br />
-							<a href="https://www.facebook.com/events/1140887622629592/">6 PM</a>
-						</div>
-						<div class="col-xs-8">
-							<a href="https://www.facebook.com/events/1140887622629592/">Black Sheep Cafe</a><br />
-							<a href="https://www.facebook.com/events/1140887622629592/">Springfield, IL</a>
-						</div>
+						{% assign output_hr = true %}
+						{% endfor %}
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4 col-md-pull-4 tos-comic-panel tos-panel-logo-container">
-				<img class="tos-panel-logo hidden-xs hidden-sm" src="img/tos_logo.png" alt="" />
+				<!-- img class="tos-panel-logo hidden-xs hidden-sm" src="img/tos_logo.png" alt="" / -->
+				<iframe class="tos-announce-video hidden-xs hidden-sm" src="https://www.youtube-nocookie.com/embed/{{ site.data.global.secondary_video_id }}?rel=0" allowfullscreen></iframe>
 				<div class="tos-mailing-list-form hidden-md hidden-lg">
 					<div id="mc_embed_signup">
 						<form action="https://theoriginstory.us11.list-manage.com/subscribe/post?u=f83573f34c299b7b16fe28d29&amp;id=e1ef72bdea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

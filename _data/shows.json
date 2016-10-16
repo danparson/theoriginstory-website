@@ -1,0 +1,27 @@
+[
+	{
+		"id": "161029-1",
+		"datetime": "Oct 29 2016 5 PM",
+		"fb_event_id": null,
+		"with": [
+			"Drained",
+			"Memorial for a Dove",
+			"Audible Galaxies",
+			"The Oceanographers"
+		],
+		"venue": "Mount Doom",
+		"citystate": "Pekin, IL"
+	},
+	{
+		"id": "161104-1",
+		"datetime": "Nov 4 2016 7 PM",
+		"fb_event_id": "716447341838598",
+		"with": [
+			"Clustrrfux",
+			"Pulsing",
+			"She."
+		],
+		"venue": "The Island",
+		"citystate": "Moline, IL"
+	}
+]

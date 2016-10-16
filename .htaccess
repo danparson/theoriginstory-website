@@ -936,6 +936,10 @@ FileETag None
 
 RewriteEngine On
 
+#Redirect /music to music subdomains
+RewriteRule ^music/?$ http://music.theoriginstory.net [R=301,L,NC]
+RewriteRule ^merch/?$ http://music.theoriginstory.net/merch [R=301,L,NC]
+
 #unless directory, remove trailing slash
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [R=301,L]

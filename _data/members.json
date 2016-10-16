@@ -1,44 +1,51 @@
 [
-  {
-    "id": "AaronBrown",
-    "name": "Aaron Brown",
-    "role": "Trombone",
-    "influences": "J.J. Johnson, Mike Soprano",
-    "fact": "I am a nerd, but I wasn't a fan of the Lord of the Rings trilogy movies."
-  },
-  {
-    "id": "BillRhoda",
-    "name": "Bill Rhoda",
-    "role": "Tenor Sax, Manager, Booking",
-    "influences": "Roger Birkeland, Marcel Mule, Fredrick Hemke, Paul Desmond, Mark Colby",
-    "fact": "I wear novelty socks exclusively (to the point i wore bacon socks to my grandmother's funeral because they were the closest to black I had)."
-  },
-  {
-    "id": "ColbyScaccianoce",
-    "name": "Colby Scaccianoce",
-    "role": "Bari Sax",
-    "influences": "80s saxophone, jazz, ska, Lady Gaga",
-    "fact": "I just learned to play bari sax in January [but she's already awesome at it]&nbsp;."
-  },
-  {
-    "id": "TraMaineCarter",
-    "name": "TraMaine Carter",
-    "role": "Drums",
-    "influences": "hip-hop, old-school R&amp;B",
-    "fact": "When I was young, I had a love for butter."
-  },
-  {
-    "id": "AndyVericker",
-    "name": "Andy Vericker",
-    "role": "Guitar",
-    "influences": "Green Day, The Get Up Kids, Modern Baseball, Mineral, Sublime, Rx Bandits, Empire! Empire! (I Was A Lonely Estate), Saves The Day",
-    "fact": "I have an obsession with hot Asian girls."
-  },
-  {
-    "id": "DanParson",
-    "name": "Dan Parson",
-    "role": "Trumpet, Web Presence",
-    "influences": "Maynard Ferguson, Arturo Sandoval, Doc Severinsen, Bix Beiderbecke",
-    "fact": "I hate shoes and go barefoot whenever I can, even in public."
-  }
+	{
+		"id": "NickLee",
+		"name": "Nick Lee",
+		"role": "Lead Vocals, Guitar",
+		"influences": "American folk music, Delta blues",
+		"fact": "I have a shrine to Bruce Springsteen in my house."
+	},
+	{
+		"id": "BillRhoda",
+		"name": "Bill Rhoda",
+		"role": "Tenor Sax, Manager, Booking",
+		"influences": "Roger Birkeland, Marcel Mule, Fredrick Hemke, Paul Desmond, Mark Colby",
+		"fact": "I wear novelty socks exclusively (to the point i wore bacon socks to my grandmother's funeral because they were the closest to black I had)."
+	},
+	{
+		"id": "ColbyScaccianoce",
+		"name": "Colby Scaccianoce",
+		"role": "Bari Sax",
+		"influences": "80s saxophone, jazz, ska, Lady Gaga",
+		"fact": "I just learned to play bari sax in January [but she's already awesome at it]&nbsp;."
+	},
+	{
+		"id": "DanParson",
+		"name": "Dan Parson",
+		"role": "Trumpet, Web Presence",
+		"influences": "Maynard Ferguson, Arturo Sandoval, Doc Severinsen, Bix Beiderbecke",
+		"fact": "I hate shoes and go barefoot whenever I can, even in public."
+	},
+	{
+		"id": "AaronBrown",
+		"name": "Aaron Brown",
+		"role": "Trombone",
+		"influences": "J.J. Johnson, Mike Soprano",
+		"fact": "I am a nerd, but I wasn't a fan of the Lord of the Rings trilogy movies."
+	},
+	{
+		"id": "AndyVericker",
+		"name": "Andy Vericker",
+		"role": "Guitar",
+		"influences": "Green Day, The Get Up Kids, Modern Baseball, Mineral, Sublime, Rx Bandits, Empire! Empire! (I Was A Lonely Estate), Saves The Day",
+		"fact": "I have an obsession with hot Asian girls."
+	},
+	{
+		"id": "TraMaineCarter",
+		"name": "TraMaine Carter",
+		"role": "Drums",
+		"influences": "hip-hop, old-school R&amp;B",
+		"fact": "When I was young, I had a love for butter."
+	}
 ]
