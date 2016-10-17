@@ -15,7 +15,7 @@ theoriginstory-website
 * [robots.txt](http://www.robotstxt.org)
 
 ## Contributing
-* See [CONTRIBUTING.md](https://github.com/danparson/theoriginstory-website/blob/master/CONTRIBUTING.md). Issues may be filed on the [Issues page](https://github.com/danparson/theoriginstory-website/issues) or [anonymously via Git Reports](https://gitreports.com/issue/danparson/theoriginstory-website).
+* See [CONTRIBUTING.md](https://github.com/danparson/theoriginstory-website/blob/master/CONTRIBUTING.md). Issues may be filed on the [Issues page](https://github.com/danparson/theoriginstory-website/issues).
 
 ## License
 * See [LICENSE.md](https://github.com/danparson/theoriginstory-website/blob/master/LICENSE.md).
