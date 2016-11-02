@@ -1,3 +1,6 @@
+---
+---
+
 /* TEAM */
 
 	Webmaster: Dan Parson
@@ -7,7 +10,7 @@
 
 /* SITE */
 
-	Last update: 2016/04/15
+	Last update: {{ site.time | date: "%b. %-e, %Y %l:%M %p" }}
 	Language: English
 	Standards: HTML5, CSS3
 	Software: Notepad++, FileZilla, Jekyll, Bootstrap, jQuery, jQuery UI, Modernizr, Respond.js
