@@ -7,7 +7,7 @@
 		"Alcohol to kill man now",
 		"Morgan Freeman: Red Light Camera Reported"
 	],
-	"main_banner_image": "img/show/160917_calendar.jpg",
+	"main_banner_image": "img/show/161029_calendar.jpg",
 	"main_banner_url": "https://www.facebook.com/TheOriginStory/events",
 	"primary_video_id": "MmHCQ1q92SU",
 	"secondary_video_id": "qrPTxCbFuGY",
@@ -23,5 +23,5 @@
 		"The Midwest Ska Spectacular!"
 	],
 	"band_bio": "Coming from the planet Earth, The Origin Story has assembled a league of extraordinary musicians to redefine the central Illinois music scene. With each member bringing their own experiences to the group, this legion of performers seeks to avenge the notion that the scene is dying by bringing action-packed music to shows.",
-	"website_version": "v1.3.1"
+	"website_version": "v1.3.2"
 }
