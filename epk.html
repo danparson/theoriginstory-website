@@ -1,0 +1,79 @@
+---
+layout: default
+title: Press Kit
+---
+
+			<div class="col-xs-12 col-md-12 tos-content-page-container">
+				<div class="tos-newspaper-left container">
+					<div class="row">
+						<div class="col-xs-12">
+							<p class="page-title">Press Kit</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12" style="margin-bottom: 20px;">
+							<a href="img/epk/the_origin_story_epk_official.jpg" data-toggle="lightbox" data-gallery="tos-epk-photos" class="col-xs-12 tos-media-link">
+								<img src="img/epk/the_origin_story_epk_official.jpg" class="tos-media-thumb img-responsive" alt="" style="width: 50%; margin-left: auto; margin-right: auto;" />
+							</a>
+							<a href="img/epk/the_origin_story_epk_action_band.jpg" data-toggle="lightbox" data-gallery="tos-epk-photos" class="col-xs-12 col-md-6 tos-media-link">
+								<img src="img/epk/the_origin_story_epk_action_band.jpg" class="tos-media-thumb img-responsive" alt="" style="height: 250px;" />
+							</a>
+							<a href="img/epk/the_origin_story_epk_action_horns.jpg" data-toggle="lightbox" data-gallery="tos-epk-photos" class="col-xs-12 col-md-6 tos-media-link">
+								<img src="img/epk/the_origin_story_epk_action_horns.jpg" class="tos-media-thumb img-responsive" alt="" style="height: 250px;" />
+							</a>
+						</div>
+
+						<div class="col-lg-10 col-lg-offset-1">
+							<p class="tos-bio">{{ site.data.global.band_bio }}</p>
+						</div>
+
+						<div class="col-xs-12">
+							<div id="band-member-list" class="list-group row">
+								{% for member in site.data.members %}
+								<div class="list-group-item band-member-item col-xs-12 col-md-4">
+									<a id="{{ member.id }}"></a>
+									<h4 class="list-group-item-heading">{{ member.name }}</h4>
+									<dl>
+										<dt>Role:</dt>
+										<dd>{{ member.role }}</dd>
+									</dl>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+
+					<iframe style="border: 0; width: 75%; height: 210px; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px;" src="http://bandcamp.com/EmbeddedPlayer/album=2852473729/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless><a href="http://music.theoriginstory.net/album/the-first-skavenger">The First Skavenger by The Origin Story</a></iframe>
+
+					<div class="tos-gallery">
+						<div class="row">
+							<a href="img/poster/poster_151124.jpg" data-toggle="lightbox" data-gallery="tos-epk-posters" data-title="" class="col-xs-12 col-sm-4 col-md-4 tos-media-link">
+								<img src="img/poster/poster_151124.jpg" class="tos-media-thumb img-responsive" alt="" style="height: 450px;" />
+							</a>
+							<a href="img/poster/poster_160123.jpg" data-toggle="lightbox" data-gallery="tos-epk-posters" data-title="" class="col-xs-12 col-sm-4 col-md-4 tos-media-link">
+								<img src="img/poster/poster_160123.jpg" class="tos-media-thumb img-responsive" alt="" style="height: 450px;" />
+							</a>
+							<a href="img/poster/poster_160414.jpg" data-toggle="lightbox" data-gallery="tos-epk-posters" data-title="" class="col-xs-12 col-sm-4 col-md-4 tos-media-link">
+								<img src="img/poster/poster_160414.jpg" class="tos-media-thumb img-responsive" alt="" style="height: 450px;" />
+							</a>
+						</div>
+						<div class="row">
+							<a href="img/poster/poster_161104.jpg" data-toggle="lightbox" data-gallery="tos-epk-posters" data-title="" class="col-xs-12 col-sm-4 col-md-4 tos-media-link">
+								<img src="img/poster/poster_161104.jpg" class="tos-media-thumb img-responsive" alt="" style="height: 450px;" />
+							</a>
+							<a href="img/poster/poster_161119.jpg" data-toggle="lightbox" data-gallery="tos-epk-posters" data-title="" class="col-xs-12 col-sm-4 col-md-4 col-sm-offset-4 tos-media-link">
+								<img src="img/poster/poster_161119.jpg" class="tos-media-thumb img-responsive" alt="" style="height: 450px;" />
+							</a>
+						</div>
+					</div>
+
+					<div class="tos-contact-social" style="width: 500px; margin-left: auto; margin-right: auto;">
+						<a href="https://www.facebook.com/TheOriginStory" class="tos-social-icon-fb"><i class="fa fa-facebook-official"></i></a>
+						<a href="https://twitter.com/TheOriginStory_" class="tos-social-icon-tw"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.youtube.com/TheOriginStoryOfficial" class="tos-social-icon-yt"><i class="fa fa-youtube"></i></a>
+						<a href="https://vine.co/TheOriginStory" class="tos-social-icon-vn"><i class="fa fa-vine"></i></a>
+						<a href="https://instagram.com/TheOriginStory" class="tos-social-icon-ig"><i class="fa fa-instagram"></i></a>
+						<a href="https://myspace.com/TheOriginStory"><img src="img/icon-myspace-black.png" alt="Myspace" class="tos-contact-social-icon" /></a>
+					</div>
+				</div>
+			</div>
