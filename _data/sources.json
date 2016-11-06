@@ -1,22 +1,22 @@
 {
-	"BWSnaps": {
-		"name": "BW. Snaps",
-		"url": "https://www.facebook.com/PhotographyByBrittanyWagley"
+	"Source1": {
+		"name": "Source 1",
+		"url": "https://www.facebook.com"
 	},
-	"BrownbearCreative": {
-		"name": "Brownbear Creative",
-		"url": "https://www.facebook.com/brownbearcreativeco"
+	"Source2": {
+		"name": "Source 2",
+		"url": "https://www.example.com"
 	},
-	"TracyBergin": {
-		"name": "Tracy Bergin",
-		"url": "https://www.facebook.com/tracy.bergin.52"
+	"Source3": {
+		"name": "Source 3",
+		"url": "https://www.facebook.com"
 	},
-	"DanParson": {
-		"name": "Dan Parson",
-		"url": "http://www.theoriginstory.net/band#DanParson"
+	"Source4": {
+		"name": "Source 4",
+		"url": "https://www.example.net"
 	},
-	"EdSteele": {
-		"name": "Ed Steele",
-		"url": "http://www.edsteelephotography.com"
+	"Source5": {
+		"name": "Source 5",
+		"url": "https://www.facebook.com"
 	}
 }

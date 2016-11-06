@@ -1,27 +1,27 @@
 [
 	{
-		"id": "161029-1",
-		"datetime": "Oct 29 2016 5 PM",
-		"fb_event_id": null,
+		"id": "170101-1",
+		"datetime": "Jan 1 2017 6 PM",
+		"url": null,
 		"with": [
-			"Drained",
-			"Memorial for a Dove",
-			"Audible Galaxies",
-			"The Oceanographers"
+			"Group 1",
+			"Group 2",
+			"Group 3",
+			"Group 4"
 		],
-		"venue": "Mount Doom",
-		"citystate": "Pekin, IL"
+		"venue": "Venue 1",
+		"citystate": "Anytown, USA"
 	},
 	{
-		"id": "161104-1",
-		"datetime": "Nov 4 2016 7 PM",
-		"fb_event_id": "716447341838598",
+		"id": "170301-1",
+		"datetime": "Mar 1 2017 7 PM",
+		"url": "https://www.facebook.com/events",
 		"with": [
-			"Clustrrfux",
-			"Pulsing",
-			"She."
+			"Group 1",
+			"Group 2",
+			"Group 3"
 		],
-		"venue": "The Island",
-		"citystate": "Moline, IL"
+		"venue": "Venue 2",
+		"citystate": "Anytown, USA"
 	}
 ]

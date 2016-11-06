@@ -7,20 +7,18 @@ title: About the Band
 				<div class="tos-newspaper-left container">
 					<div class="row">
 						<div class="col-xs-12">
-							<p class="page-title">The Band</p>
+							<p class="page-title">{{ page.title }}</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-12">
-							<div id="bio-photo-container">
-								<div id="bio-photo-1" class="bio-photo-panel"><a href="#AaronBrown" title="Aaron Brown"></a></div><!--
-							 --><div id="bio-photo-2" class="bio-photo-panel"><a href="#BillRhoda" title="Bill Rhoda"></a></div><!--
-							 --><div id="bio-photo-3" class="bio-photo-panel"><a href="#ColbyScaccianoce" title="Colby Scaccianoce"></a></div><!--
-							 --><div id="bio-photo-4" class="bio-photo-panel"><a href="#TraMaineCarter" title="TraMaine Carter"></a></div><!--
-							 --><div id="bio-photo-6" class="bio-photo-panel"><a href="#AndyVericker" title="Andy Vericker"></a></div><!--
-							 --><div id="bio-photo-7" class="bio-photo-panel"><a href="#DanParson" title="Dan Parson"></a></div><!--
-							 --><div id="bio-photo-8" class="bio-photo-panel"><a href="https://en.wikipedia.org/wiki/Lincoln,_Illinois" title="Lincoln, Illinois"></a></div>
-								<img id="bio-mobile-photo" src="img/tos_bio_photo.jpg" alt="" />
+							<div id="bio-photo-container"><!--
+								{% assign members_sorted = site.data.members | sort: 'bio_photo_order', 'last' %}
+								{% for member in members_sorted limit:6 %}
+								--><div id="bio-photo-{{ member.bio_photo_order }}" class="bio-photo-panel"><a href="#{{ member.id }}" title="{{ member.name }}"></a></div><!--
+								{% endfor %}
+								--><div id="bio-photo-8" class="bio-photo-panel"><a href="https://en.wikipedia.org/wiki/Lincoln,_Illinois" title="Lincoln, Illinois"></a></div>
+								<img id="bio-mobile-photo" src="{{ site.data.assets.bio_photo }}" alt="" />
 							</div>
 						</div>
 						<div class="col-lg-10 col-lg-offset-1">

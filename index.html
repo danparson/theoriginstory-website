@@ -4,11 +4,11 @@ layout: default
 
 			<div class="col-xs-12 col-md-8 tos-comic-panel">
 				<div class="tos-announce-container">
-					<a href="{{ site.data.global.main_banner_url }}" class="tos-announce-link"><img class="tos-announce-image" src="{{ site.data.global.main_banner_image }}" /></a>
+					<a href="{{ site.data.assets.main_banner_url }}" class="tos-announce-link"><img class="tos-announce-image" src="{{ site.data.assets.main_banner_image }}" /></a>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4 tos-comic-panel">
-				<iframe class="tos-announce-video" src="https://www.youtube-nocookie.com/embed/{{ site.data.global.primary_video_id }}?rel=0" allowfullscreen></iframe>
+				<iframe class="tos-announce-video" src="{{ site.data.assets.primary_video_url }}" allowfullscreen></iframe>
 			</div>
 
 			<div class="clearfix visible-md-block visible-lg-block"></div>
@@ -49,13 +49,13 @@ layout: default
 						</div>
 						{% endif %}
 						<div class="col-xs-4">
-							{% if show.fb_event_id %}<a href="https://www.facebook.com/events/{{ show.fb_event_id }}/">{% endif %}{{ show.datetime | date: "%-m/%e" }}{% if show.fb_event_id %}</a>{% endif %}<br />
+							{% if show.url %}<a href="{{ show.url }}">{% endif %}{{ show.datetime | date: "%-m/%e" }}{% if show.url %}</a>{% endif %}<br />
 							{% capture showtime %}{{ show.datetime | date: "%l:%M %p" }}{% endcapture %}
-							{% if showtime != "12:00 AM" %}{% if show.fb_event_id %}<a href="https://www.facebook.com/events/{{ show.fb_event_id }}/">{% endif %}{{ show.datetime | date: "%l:%M %p" }}{% if show.fb_event_id %}</a>{% endif %}{% endif %}
+							{% if showtime != "12:00 AM" %}{% if show.url %}<a href="{{ show.url }}">{% endif %}{{ show.datetime | date: "%l:%M %p" }}{% if show.url %}</a>{% endif %}{% endif %}
 						</div>
 						<div class="col-xs-8">
-							{% if show.fb_event_id %}<a href="https://www.facebook.com/events/{{ show.fb_event_id }}/">{% endif %}{{ show.venue }}{% if show.fb_event_id %}</a>{% endif %}<br />
-							{% if show.fb_event_id %}<a href="https://www.facebook.com/events/{{ show.fb_event_id }}/">{% endif %}{{ show.citystate }}{% if show.fb_event_id %}</a>{% endif %}
+							{% if show.url %}<a href="{{ show.url }}">{% endif %}{{ show.venue }}{% if show.url %}</a>{% endif %}<br />
+							{% if show.url %}<a href="{{ show.url }}">{% endif %}{{ show.citystate }}{% if show.url %}</a>{% endif %}
 						</div>
 						{% assign output_hr = true %}
 						{% endfor %}
@@ -63,13 +63,12 @@ layout: default
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4 col-md-pull-4 tos-comic-panel tos-panel-logo-container">
-				<!-- img class="tos-panel-logo hidden-xs hidden-sm" src="img/tos_logo.png" alt="" / -->
-				<iframe class="tos-announce-video hidden-xs hidden-sm" src="https://www.youtube-nocookie.com/embed/{{ site.data.global.secondary_video_id }}?rel=0" allowfullscreen></iframe>
+				<iframe class="tos-announce-video hidden-xs hidden-sm" src="{{ site.data.assets.secondary_video_url }}" allowfullscreen></iframe>
 				<div class="tos-mailing-list-form hidden-md hidden-lg">
 					<div id="mc_embed_signup">
-						<form action="https://theoriginstory.us11.list-manage.com/subscribe/post?u=f83573f34c299b7b16fe28d29&amp;id=e1ef72bdea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<form action="{{ site.data.global.website_mailing_list_url }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							<div id="mc_embed_signup_scroll">
-								<h2>Join our Fantastic Fans</h2>
+								<h2>Join our {{ site.data.global.website_mailing_list_name }}</h2>
 								<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 								<div class="mc-field-group">
 									<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
@@ -88,7 +87,7 @@ layout: default
 									<div class="response" id="mce-error-response"></div>
 									<div class="response" id="mce-success-response"></div>
 								</div>
-								<div class="mc-trap"><input type="text" name="b_f83573f34c299b7b16fe28d29_e1ef72bdea" tabindex="-1" value=""></div>
+								<div class="mc-trap"><input type="text" name="{{ site.data.global.website_mailing_list_trap }}" tabindex="-1" value=""></div>
 								<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 							</div>
 						</form>

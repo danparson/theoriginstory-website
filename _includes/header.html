@@ -12,19 +12,19 @@
 				</button>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
-				<form class="navbar-form navbar-right" role="form" action="https://theoriginstory.us11.list-manage.com/subscribe?u=f83573f34c299b7b16fe28d29&id=e1ef72bdea" method="post">
+				<form class="navbar-form navbar-right" role="form" action="{{ site.data.global.website_mailing_list_url }}" method="post">
 					<div class="form-group">
 						<input type="text" placeholder="Email" class="form-control" id="EMAIL" name="EMAIL">
 					</div>
-					<button type="submit" class="btn tos-button-subscribe">Join our Fantastic Fans!</button>
+					<button type="submit" class="btn tos-button-subscribe">Join our {{ site.data.global.website_mailing_list_name }}!</button>
 				</form>
 				<span class="tos-social navbar-right">
-					<a href="https://www.facebook.com/TheOriginStory" class="tos-social-icon-fb"><i class="fa fa-facebook-official"></i></a>
-					<a href="https://twitter.com/TheOriginStory_" class="tos-social-icon-tw"><i class="fa fa-twitter"></i></a>
-					<a href="https://www.youtube.com/TheOriginStoryOfficial" class="tos-social-icon-yt"><i class="fa fa-youtube"></i></a>
-					<a href="https://vine.co/TheOriginStory" class="tos-social-icon-vn"><i class="fa fa-vine"></i></a>
-					<a href="https://instagram.com/TheOriginStory" class="tos-social-icon-ig"><i class="fa fa-instagram"></i></a>
-					<a href="https://myspace.com/TheOriginStory"><img src="img/icon-myspace-white.png" alt="Myspace" class="tos-social-icon" /></a>
+					<a href="{{ site.data.global.website_facebook }}" class="tos-social-icon-fb"><i class="fa fa-facebook-official"></i></a>
+					<a href="{{ site.data.global.website_twitter }}" class="tos-social-icon-tw"><i class="fa fa-twitter"></i></a>
+					<a href="{{ site.data.global.website_youtube }}" class="tos-social-icon-yt"><i class="fa fa-youtube"></i></a>
+					<a href="{{ site.data.global.website_vine }}" class="tos-social-icon-vn"><i class="fa fa-vine"></i></a>
+					<a href="{{ site.data.global.website_instagram }}" class="tos-social-icon-ig"><i class="fa fa-instagram"></i></a>
+					<a href="{{ site.data.global.website_myspace }}"><img src="img/icon-myspace-white.png" alt="Myspace" class="tos-social-icon" /></a>
 				</span>
 			</div>
 		</div>
@@ -32,10 +32,10 @@
 	<div class="container" id="tos-page-container">
 		<div class="row tos-top-panel">
 			<div class="hidden-xs hidden-sm col-md-4">
-			<p class="tos-title-line">The Origin Story</p>
+			<p class="tos-title-line">{{ site.data.global.website_title }}</p>
 			</div>
 			<div class="col-xs-12 col-md-4">
-			<p class="tos-publisher-line">Skarvel Comic Group</p>
+			<p class="tos-publisher-line">{{ site.data.global.website_comic_publisher }}</p>
 			</div>
 			<div class="hidden-xs hidden-sm col-md-4">
 			<p class="tos-issue-line">#{{ site.data.global.issue }}</p>
@@ -43,7 +43,7 @@
 		</div>
 		<div class="row tos-logo-panel">
 			<div class="col-xs-12 col-md-6 col-md-offset-3">
-			<img src="img/tos_wordmark.png" alt="" />
+			<img src="{{ site.data.assets.wordmark }}" alt="" />
 			</div>
 		</div>
 		<div class="row">
@@ -57,17 +57,17 @@
 								<span class="icon-bar tos-icon-bar"></span>
 								<span class="icon-bar tos-icon-bar"></span>
 							</button>
-							<a class="navbar-brand tos-navbar-brand hidden-md hidden-lg" href="#"><img src="/img/favicon/favicon-96x96.png" alt="The Origin Story" class="tos-navbar-logo" /></a>
+							<a class="navbar-brand tos-navbar-brand hidden-md hidden-lg" href="#"><img src="{{ site.data.assets.favicon_96x96 }}" alt="{{ site.data.global.website_title }}" class="tos-navbar-logo" /></a>
 							<p class="tos-navbar-brand-text hidden-sm hidden-md hidden-lg"></p>
 						</div>
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav tos-navbar-nav">
 								<li{% if page.path == "index.html" %} class="active"{% endif %}><a href="/">Home{% if page.path == "index.html" %}<span class="sr-only"> (current)</span>{% endif %}</a></li>
 								<li{% if page.path == "shows.html" %} class="active"{% endif %}><a href="shows">Shows{% if page.path == "shows.html" %}<span class="sr-only"> (current)</span>{% endif %}</a></li>
-								<li><a href="http://music.theoriginstory.net">Music</a></li>
+								<li><a href="{{ site.data.global.website_music_url }}">Music</a></li>
 								<li{% if page.path == "photos-videos.html" %} class="active"{% endif %}><a href="photos-videos">Photos/Videos{% if page.path == "photos-videos.html" %}<span class="sr-only"> (current)</span>{% endif %}</a></li>
 								<li{% if page.path == "band.html" %} class="active"{% endif %}><a href="band">Band{% if page.path == "band.html" %}<span class="sr-only"> (current)</span>{% endif %}</a></li>
-								<li><a href="http://music.theoriginstory.net/merch">Merch</a></li>
+								<li><a href="{{ site.data.global.website_merch_url }}">Merch</a></li>
 								<li{% if page.path == "contact.html" %} class="active"{% endif %}><a href="contact">Contact{% if page.path == "contact.html" %}<span class="sr-only"> (current)</span>{% endif %}</a></li>
 							</ul>
 						</div>

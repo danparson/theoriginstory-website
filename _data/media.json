@@ -1,79 +1,79 @@
 [
 	{
-		"id": "160123_01",
-		"type": "image",
-		"embed_url": null,
-		"caption": "The Origin Story @ Rail II (1/23/16)",
-		"source": "BWSnaps"
+		"id": "photo001",
+		"url": "http://lorempixel.com/1920/1080/people/1/",
+		"thumb_url": "http://lorempixel.com/300/300/people/1/",
+		"caption": "Photo #1",
+		"source": "Source1"
 	},
 	{
-		"id": "160123_02",
-		"type": "image",
-		"embed_url": null,
-		"caption": "The Origin Story @ Rail II (1/23/16)",
-		"source": "BWSnaps"
+		"id": "photo002",
+		"url": "http://lorempixel.com/1920/1080/people/2/",
+		"thumb_url": "http://lorempixel.com/300/300/people/2/",
+		"caption": "Photo #2",
+		"source": "Source2"
 	},
 	{
-		"id": "160123_03",
-		"type": "image",
-		"embed_url": null,
-		"caption": "The Origin Story @ Rail II (1/23/16)",
-		"source": "BWSnaps"
+		"id": "photo003",
+		"url": "http://lorempixel.com/1920/1080/people/3/",
+		"thumb_url": "http://lorempixel.com/300/300/people/3/",
+		"caption": "Photo #3",
+		"source": "Source3"
 	},
 	{
-		"id": "160123_04",
-		"type": "image",
-		"embed_url": null,
-		"caption": "The Origin Story @ Rail II (1/23/16)",
-		"source": "BWSnaps"
+		"id": "photo004",
+		"url": "http://lorempixel.com/1920/1080/people/4/",
+		"thumb_url": "http://lorempixel.com/300/300/people/4/",
+		"caption": "Photo #4",
+		"source": "Source4"
 	},
 	{
-		"id": "160123_05",
-		"type": "image",
-		"embed_url": null,
-		"caption": "The Origin Story @ Rail II (1/23/16)",
-		"source": "BWSnaps"
+		"id": "photo005",
+		"url": "http://lorempixel.com/1920/1080/people/5/",
+		"thumb_url": "http://lorempixel.com/300/300/people/5/",
+		"caption": "Photo #5",
+		"source": "Source5"
 	},
 	{
-		"id": "160123_06",
-		"type": "image",
-		"embed_url": null,
-		"caption": "The Origin Story @ Rail II (1/23/16)",
-		"source": "BWSnaps"
+		"id": "photo006",
+		"url": "http://lorempixel.com/1920/1080/people/6/",
+		"thumb_url": "http://lorempixel.com/300/300/people/6/",
+		"caption": "Photo #6",
+		"source": "Source1"
 	},
 	{
-		"id": "160220_01",
-		"type": "image",
-		"embed_url": null,
-		"caption": "The Origin Story @ Rail II (2/20/16)",
-		"source": "BrownbearCreative"
+		"id": "photo007",
+		"url": "http://lorempixel.com/1920/1080/people/7/",
+		"thumb_url": "http://lorempixel.com/300/300/people/7/",
+		"caption": "Photo #7",
+		"source": "Source2"
 	},
 	{
-		"id": "160318_01",
-		"type": "image",
-		"embed_url": null,
-		"caption": "The Origin Story @ Broken Tree Cafe (3/18/16)",
-		"source": "TracyBergin"
+		"id": "photo008",
+		"url": "http://lorempixel.com/1920/1080/people/8/",
+		"thumb_url": "http://lorempixel.com/300/300/people/8/",
+		"caption": "Photo #8",
+		"source": "Source3"
 	},
 	{
-		"id": "160318_02",
-		"type": "image",
-		"embed_url": null,
-		"caption": "The Origin Story @ Broken Tree Cafe (3/18/16)",
-		"source": "TracyBergin"
+		"id": "photo009",
+		"url": "http://lorempixel.com/1920/1080/people/9/",
+		"thumb_url": "http://lorempixel.com/300/300/people/9/",
+		"caption": "Photo #9",
+		"source": "Source4"
 	},
 	{
-		"id": "160318_03",
-		"type": "image",
-		"embed_url": null,
-		"caption": "The Origin Story @ Broken Tree Cafe (3/18/16)",
-		"source": "TracyBergin"
+		"id": "photo010",
+		"url": "http://lorempixel.com/1920/1080/people/10/",
+		"thumb_url": "http://lorempixel.com/300/300/people/10/",
+		"caption": "Photo #10",
+		"source": "Source5"
 	},
 	{
-		"id": "160318_v01",
-		"type": "youtube",
-		"embed_url": "BUNeInix768",
-		"caption": "The Origin Story @ Broken Tree Cafe (3/18/16)",
-		"source": "TracyBergin"
+		"id": "video001",
+		"url": "https://www.youtube.com/watch?v=BeyEGebJ1l4",
+		"thumb_url": "https://i1.ytimg.com/vi/BeyEGebJ1l4/maxresdefault.jpg",
+		"caption": "Video #1",
+		"source": "Source1"
 	}
 ]

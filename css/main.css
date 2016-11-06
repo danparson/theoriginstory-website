@@ -1,3 +1,6 @@
+---
+---
+
 @font-face {
 	font-family: 'komika_handitalic';
 	src: url('../fonts/Komika_Hand_Italic-webfont.eot');
@@ -380,115 +383,115 @@ body {
 }
 
 #bio-photo-1 {
-	background-image: url("../img/tos_bio_photo_1.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_1 }}");
 	width: 25.0481696%;
 	background-size: 100% 100%;
 }
 
 #bio-photo-2 {
-	background-image: url("../img/tos_bio_photo_2.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_2 }}");
 	width: 10.5973025%;
 	background-size: 100% 100%;
 }
 
 #bio-photo-3 {
-	background-image: url("../img/tos_bio_photo_3.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_3 }}");
 	width: 10.5973025%;
 	background-size: 100% 100%;
 }
 
 #bio-photo-4 {
-	background-image: url("../img/tos_bio_photo_4.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_4 }}");
 	width: 8.18882466%;
 	background-size: 100% 100%;
 }
 
 #bio-photo-5 {
-	background-image: url("../img/tos_bio_photo_5.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_5 }}");
 	width: 6.74373796%;
 	background-size: 100% 100%;
 }
 
 #bio-photo-6 {
-	background-image: url("../img/tos_bio_photo_6.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_6 }}");
 	width: 7.70712909%;
 	background-size: 100% 100%;
 }
 
 #bio-photo-7 {
-	background-image: url("../img/tos_bio_photo_7.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_7 }}");
 	width: 19.2678227%;
 	background-size: 100% 100%;
 }
 
 #bio-photo-8 {
-	background-image: url("../img/tos_bio_photo_8.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_8 }}");
 	width: 11.849711%;
 	background-size: 100% 100%;
 }
 
 #bio-photo-container:hover > #bio-photo-1 {
-	background-image: url("../img/tos_bio_photo_bw_1.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_bw_1 }}");
 }
 
 #bio-photo-container:hover > #bio-photo-2 {
-	background-image: url("../img/tos_bio_photo_bw_2.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_bw_2 }}");
 }
 
 #bio-photo-container:hover > #bio-photo-3 {
-	background-image: url("../img/tos_bio_photo_bw_3.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_bw_3 }}");
 }
 
 #bio-photo-container:hover > #bio-photo-4 {
-	background-image: url("../img/tos_bio_photo_bw_4.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_bw_4 }}");
 }
 
 #bio-photo-container:hover > #bio-photo-5 {
-	background-image: url("../img/tos_bio_photo_bw_5.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_bw_5 }}");
 }
 
 #bio-photo-container:hover > #bio-photo-6 {
-	background-image: url("../img/tos_bio_photo_bw_6.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_bw_6 }}");
 }
 
 #bio-photo-container:hover > #bio-photo-7 {
-	background-image: url("../img/tos_bio_photo_bw_7.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_bw_7 }}");
 }
 
 #bio-photo-container:hover > #bio-photo-8 {
-	background-image: url("../img/tos_bio_photo_bw_8.jpg");
+	background-image: url("{{ site.data.assets.bio_photo_bw_8 }}");
 }
 
 #bio-photo-1:hover {
-	background-image: url("../img/tos_bio_photo_1.jpg") !important;
+	background-image: url("{{ site.data.assets.bio_photo_1 }}") !important;
 }
 
 #bio-photo-2:hover {
-	background-image: url("../img/tos_bio_photo_2.jpg") !important;
+	background-image: url("{{ site.data.assets.bio_photo_2 }}") !important;
 }
 
 #bio-photo-3:hover {
-	background-image: url("../img/tos_bio_photo_3.jpg") !important;
+	background-image: url("{{ site.data.assets.bio_photo_3 }}") !important;
 }
 
 #bio-photo-4:hover {
-	background-image: url("../img/tos_bio_photo_4.jpg") !important;
+	background-image: url("{{ site.data.assets.bio_photo_4 }}") !important;
 }
 
 #bio-photo-5:hover {
-	background-image: url("../img/tos_bio_photo_5.jpg") !important;
+	background-image: url("{{ site.data.assets.bio_photo_5 }}") !important;
 }
 
 #bio-photo-6:hover {
-	background-image: url("../img/tos_bio_photo_6.jpg") !important;
+	background-image: url("{{ site.data.assets.bio_photo_6 }}") !important;
 }
 
 #bio-photo-7:hover {
-	background-image: url("../img/tos_bio_photo_7.jpg") !important;
+	background-image: url("{{ site.data.assets.bio_photo_7 }}") !important;
 }
 
 #bio-photo-8:hover {
-	background-image: url("../img/tos_bio_photo_8.jpg") !important;
+	background-image: url("{{ site.data.assets.bio_photo_8 }}") !important;
 }
 
 .bio-photo-panel > a {
