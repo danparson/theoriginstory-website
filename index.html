@@ -94,3 +94,52 @@ layout: default
 					</div>
 				</div>
 			</div>
+
+			<div class="clearfix visible-md-block visible-lg-block"></div>
+
+			<div class="col-xs-12 col-md-4 tos-comic-panel">
+				<a class="twitter-timeline" data-dnt="true" data-height="100%" href="https://twitter.com/{{ site.data.global.twitter_username }}">Tweets by {{ site.data.global.twitter_username }}</a>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+			<div class="col-xs-12 col-md-8 tos-comic-panel">
+				<div id="carousel-main" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators hidden">
+				    <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-main" data-slide-to="1"></li>
+				    <li data-target="#carousel-main" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+						{% assign set_active = true %}
+						{% for image_group in site.data.global.main_carousel_images %}
+						{% if set_active == true %}
+				    <div class="item active">
+						{% else %}
+						<div class="item">
+						{% endif %}
+						{% assign set_active = false %}
+							<div class="row">
+								{% for image in image_group %}
+								{% assign image_source = site.data.media[image].source %}
+								<div class="col-xs-6 col-sm-6">
+					      	<a href="{{ site.data.media[image].url }}" data-toggle="lightbox" data-gallery="tos-main-carousel" data-title="{{ site.data.media[image].caption }}" data-footer="Credit: {{ site.data.sources[image_source].name }}" class="thumbnail"><img src="{{ site.data.media[image].thumb_url }}" alt="{{ site.data.media[image].caption }}. Credit: {{ site.data.sources[image_source].name }}" class="img-responsive"></a>
+								</div>
+								{% endfor %}
+							</div>
+				    </div>
+						{% endfor %}
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>

@@ -680,5 +680,72 @@ body {
 }
 
 .tos-delta {
-	text-align: center; display: block; margin-left: auto; margin-right: auto; color: #333333;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: #333333;
+}
+
+.carousel-fade .carousel-inner .item {
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
+#carousel-main,
+#carousel-main .carousel-inner,
+#carousel-main .carousel-inner .item,
+#carousel-main .carousel-inner .row,
+#carousel-main .carousel-inner .row > div {
+	height: 100%;
+}
+
+#carousel-main .carousel-inner .row {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#carousel-main .carousel-inner .row > div:first-child {
+	padding-left: 0px;
+	padding-right: 2px;
+}
+
+#carousel-main .carousel-inner .row > div:last-child {
+	padding-left: 2px;
+	padding-right: 0px;
+}
+
+#carousel-main .carousel-inner .thumbnail,
+#carousel-main .carousel-inner img {
+	width: 100%; height: 100%;
+}
+
+#carousel-main .carousel-inner .thumbnail {
+	margin-bottom: 0px;
+}
+
+#carousel-main .carousel-control {
+	width: 5%;
 }

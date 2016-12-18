@@ -35,5 +35,11 @@
 	"website_mailing_list_trap": "",
 	"website_music_url": "http://example.com",
 	"website_merch_url": "http://example.com",
-	"epk_music_player": "<iframe width=\"853\" height=\"480\" src=\"https://www.youtube-nocookie.com/embed/videoseries?list=PLaFt8dYdGlIICH0guVYH_cbPlzIh45_6O\" allowfullscreen style=\"display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;\"></iframe>"
+	"epk_music_player": "<iframe width=\"853\" height=\"480\" src=\"https://www.youtube-nocookie.com/embed/videoseries?list=PLaFt8dYdGlIICH0guVYH_cbPlzIh45_6O\" allowfullscreen style=\"display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;\"></iframe>",
+	"main_carousel_images": [
+		["photo001", "photo002"],
+		["photo003", "photo004"],
+		["photo005", "photo006"]
+	],
+	"twitter_username": "twitter"
 }

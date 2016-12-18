@@ -12,8 +12,8 @@ title: Photos/Videos
 					</div>
 					<div class="row tos-gallery">
 
-						{% for medium in site.data.media %}
-
+						{% for item in site.data.media %}
+						{% assign medium = item[1] %}
 						{% if medium.url contains ".jpg" %}
 						<a href="{{ medium.url }}" data-toggle="lightbox" data-gallery="tos-media" data-title="{{ medium.caption }}" data-footer="Credit: {{ site.data.sources[medium.source].name }}" class="col-xs-12 col-sm-6 col-md-4 tos-media-link">
 							<img src="{{ medium.thumb_url }}" class="tos-media-thumb img-responsive" alt="{{ medium.caption }}. Credit: {{ site.data.sources[medium.source].name }}" />
